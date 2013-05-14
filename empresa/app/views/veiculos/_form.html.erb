@@ -1,0 +1,41 @@
+<%= form_for(@veiculo) do |f| %>
+  <% if @veiculo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@veiculo.errors.count, "error") %> prohibited this veiculo from being saved:</h2>
+
+      <ul>
+      <% @veiculo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :codigo %><br />
+    <%= f.text_field :codigo %>
+  </div>
+  <div class="field">
+    <%= f.label :Descricao %><br />
+    <%= f.text_field :Descricao %>
+  </div>
+  <div class="field">
+    <%= f.label :Ano %><br />
+    <%= f.date_select :Ano %>
+  </div>
+  <div class="field">
+    <%= f.label :Placa %><br />
+    <%= f.text_field :Placa %>
+  </div>
+  <div class="field">
+    <%= f.label :Km %><br />
+    <%= f.text_field :Km %>
+  </div>
+  <div class="field">
+    <%= f.label :Categoria %><br />
+    <%= f.text_field :Categoria %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

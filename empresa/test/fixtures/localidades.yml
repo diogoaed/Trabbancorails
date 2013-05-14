@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  CEP: MyString
+  Endereco: MyString
+  UF: MyString
+  Cidade: MyString
+
+two:
+  CEP: MyString
+  Endereco: MyString
+  UF: MyString
+  Cidade: MyString

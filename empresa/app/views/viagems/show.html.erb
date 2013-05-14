@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Numeroviagem:</b>
+  <%= @viagem.Numeroviagem %>
+</p>
+
+<p>
+  <b>Data:</b>
+  <%= @viagem.Data %>
+</p>
+
+<p>
+  <b>Obs:</b>
+  <%= @viagem.Obs %>
+</p>
+
+<p>
+  <b>Kmini:</b>
+  <%= @viagem.Kmini %>
+</p>
+
+<p>
+  <b>Kmfim:</b>
+  <%= @viagem.Kmfim %>
+</p>
+
+<p>
+  <b>Codigoveiculo:</b>
+  <%= @viagem.CodigoVeiculo %>
+</p>
+
+<p>
+  <b>Codigofuncionario:</b>
+  <%= @viagem.Codigofuncionario %>
+</p>
+
+
+<%= link_to 'Edit', edit_viagem_path(@viagem) %> |
+<%= link_to 'Back', viagems_path %>

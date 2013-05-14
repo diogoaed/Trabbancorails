@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Codigo:</b>
+  <%= @funcionario.codigo %>
+</p>
+
+<p>
+  <b>Nome:</b>
+  <%= @funcionario.Nome %>
+</p>
+
+<p>
+  <b>Endereco:</b>
+  <%= @funcionario.Endereco %>
+</p>
+
+<p>
+  <b>Telefone:</b>
+  <%= @funcionario.Telefone %>
+</p>
+
+<p>
+  <b>Datadenasc:</b>
+  <%= @funcionario.DatadeNasc %>
+</p>
+
+<p>
+  <b>Classe:</b>
+  <%= @funcionario.Classe %>
+</p>
+
+<p>
+  <b>Categoria:</b>
+  <%= @funcionario.Categoria %>
+</p>
+
+
+<%= link_to 'Edit', edit_funcionario_path(@funcionario) %> |
+<%= link_to 'Back', funcionarios_path %>

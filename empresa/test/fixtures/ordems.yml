@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Numeroordem: MyString
+  Data: 2013-05-13
+  Qtyitens: MyString
+  Valor: MyString
+  Tipo: MyString
+
+two:
+  Numeroordem: MyString
+  Data: 2013-05-13
+  Qtyitens: MyString
+  Valor: MyString
+  Tipo: MyString

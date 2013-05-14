@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Numeroordem:</b>
+  <%= @ordem.Numeroordem %>
+</p>
+
+<p>
+  <b>Data:</b>
+  <%= @ordem.Data %>
+</p>
+
+<p>
+  <b>Qtyitens:</b>
+  <%= @ordem.Qtyitens %>
+</p>
+
+<p>
+  <b>Valor:</b>
+  <%= @ordem.Valor %>
+</p>
+
+<p>
+  <b>Tipo:</b>
+  <%= @ordem.Tipo %>
+</p>
+
+
+<%= link_to 'Editar', edit_ordem_path(@ordem) %> |
+<%= link_to 'Voltar', ordems_path %>

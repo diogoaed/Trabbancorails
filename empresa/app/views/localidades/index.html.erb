@@ -1,0 +1,30 @@
+<h1>Localidades</h1>
+
+<table>
+  <tr>
+    <th>Cep</th>
+    <th>Endereco</th>
+    <th>UF</th>
+    <th>Cidade</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @localidades.each do |localidade| %>
+  <tr>
+    <td><%= localidade.CEP %></td>
+    <td><%= localidade.Endereco %></td>
+    <td><%= localidade.UF %></td>
+    <td><%= localidade.Cidade %></td>
+    <td><%= link_to 'Mostrar', localidade %></td>
+    <td><%= link_to 'Editar', edit_localidade_path(localidade) %></td>
+    <td><%= link_to 'Apagar', localidade, :method => :delete, :data => { :confirm => 'Tem certeza que deseja apagar esse cadastro ?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nova Localidade', new_localidade_path %>
+<li><a href="http://localhost:3000">Home</a></li>

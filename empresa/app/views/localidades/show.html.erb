@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Cep:</b>
+  <%= @localidade.CEP %>
+</p>
+
+<p>
+  <b>Endereco:</b>
+  <%= @localidade.Endereco %>
+</p>
+
+<p>
+  <b>UF:</b>
+  <%= @localidade.UF %>
+</p>
+
+<p>
+  <b>Cidade:</b>
+  <%= @localidade.Cidade %>
+</p>
+
+
+<%= link_to 'Editar', edit_localidade_path(@localidade) %> |
+<%= link_to 'Voltar', localidades_path %>
+

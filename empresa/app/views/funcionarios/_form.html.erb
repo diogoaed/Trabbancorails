@@ -1,0 +1,45 @@
+<%= form_for(@funcionario) do |f| %>
+  <% if @funcionario.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@funcionario.errors.count, "error") %> prohibited this funcionario from being saved:</h2>
+
+      <ul>
+      <% @funcionario.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :codigo %><br />
+    <%= f.text_field :codigo %>
+  </div>
+  <div class="field">
+    <%= f.label :Nome %><br />
+    <%= f.text_field :Nome %>
+  </div>
+  <div class="field">
+    <%= f.label :Endereco %><br />
+    <%= f.text_field :Endereco %>
+  </div>
+  <div class="field">
+    <%= f.label :Telefone %><br />
+    <%= f.text_field :Telefone %>
+  </div>
+  <div class="field">
+    <%= f.label :DatadeNasc %><br />
+    <%= f.date_select :DatadeNasc %>
+  </div>
+  <div class="field">
+    <%= f.label :Classe %><br />
+    <%= f.text_field :Classe %>
+  </div>
+  <div class="field">
+    <%= f.label :Categoria %><br />
+    <%= f.text_field :Categoria %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

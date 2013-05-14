@@ -1,0 +1,32 @@
+<h1>Ordens</h1>
+
+<table>
+  <tr>
+    <th>Numeroordem</th>
+    <th>Data</th>
+    <th>Qtyitens</th>
+    <th>Valor</th>
+    <th>Tipo</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ordems.each do |ordem| %>
+  <tr>
+    <td><%= ordem.Numeroordem %></td>
+    <td><%= ordem.Data %></td>
+    <td><%= ordem.Qtyitens %></td>
+    <td><%= ordem.Valor %></td>
+    <td><%= ordem.Tipo %></td>
+    <td><%= link_to 'Mostrar', ordem %></td>
+    <td><%= link_to 'Editar', edit_ordem_path(ordem) %></td>
+    <td><%= link_to 'Remover', ordem, :method => :delete, :data => { :confirm => 'Tem certeza que deseja remover essa ordem ?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nova Ordem', new_ordem_path %>
+<li><a href="http://localhost:3000">Home</a></li>

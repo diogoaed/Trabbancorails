@@ -1,0 +1,45 @@
+<%= form_for(@viagem) do |f| %>
+  <% if @viagem.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@viagem.errors.count, "error") %> prohibited this viagem from being saved:</h2>
+
+      <ul>
+      <% @viagem.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Numeroviagem %><br />
+    <%= f.text_field :Numeroviagem %>
+  </div>
+  <div class="field">
+    <%= f.label :Data %><br />
+    <%= f.date_select :Data %>
+  </div>
+  <div class="field">
+    <%= f.label :Obs %><br />
+    <%= f.text_field :Obs %>
+  </div>
+  <div class="field">
+    <%= f.label :Kmini %><br />
+    <%= f.text_field :Kmini %>
+  </div>
+  <div class="field">
+    <%= f.label :Kmfim %><br />
+    <%= f.text_field :Kmfim %>
+  </div>
+  <div class="field">
+    <%= f.label :CodigoVeiculo %><br />
+    <%= f.text_field :CodigoVeiculo %>
+  </div>
+  <div class="field">
+    <%= f.label :Codigofuncionario %><br />
+    <%= f.text_field :Codigofuncionario %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Numeroviagem: MyString
+  Data: 2013-05-14
+  Obs: MyString
+  Kmini: MyString
+  Kmfim: MyString
+  CodigoVeiculo: MyString
+  Codigofuncionario: MyString
+
+two:
+  Numeroviagem: MyString
+  Data: 2013-05-14
+  Obs: MyString
+  Kmini: MyString
+  Kmfim: MyString
+  CodigoVeiculo: MyString
+  Codigofuncionario: MyString

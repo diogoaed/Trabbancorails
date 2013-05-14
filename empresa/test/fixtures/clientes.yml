@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Codigo: MyString
+  Nome: MyString
+  Telefone: MyString
+  CEP: MyString
+
+two:
+  Codigo: MyString
+  Nome: MyString
+  Telefone: MyString
+  CEP: MyString

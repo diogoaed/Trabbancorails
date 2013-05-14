@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  codigo: MyString
+  Nome: 
+  Endereco: MyString
+  Telefone: MyString
+  DatadeNasc: 2013-05-14
+  Classe: MyString
+  Categoria: MyString
+
+two:
+  codigo: MyString
+  Nome: 
+  Endereco: MyString
+  Telefone: MyString
+  DatadeNasc: 2013-05-14
+  Classe: MyString
+  Categoria: MyString

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  codigo: MyString
+  Descricao: MyString
+  Ano: 2013-05-14
+  Placa: MyString
+  Km: MyString
+  Categoria: MyString
+
+two:
+  codigo: MyString
+  Descricao: MyString
+  Ano: 2013-05-14
+  Placa: MyString
+  Km: MyString
+  Categoria: MyString
